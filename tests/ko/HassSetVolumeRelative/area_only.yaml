@@ -1,0 +1,37 @@
+---
+# HassSetVolumeRelative - area_only
+
+language: "ko"
+areas:
+  - name: "거실"
+entities:
+  - name: "티비"
+    domain: "media_player"
+    area: "거실"
+tests:
+  - sentences:
+      - "거실 소리 좀 키워줘"
+      - "거실 볼륨 올려"
+    slots:
+      area: "거실"
+      volume_step: "up"
+    response: "볼륨을 조절했습니다"
+  - sentences:
+      - "거실 소리 줄여줘"
+      - "거실 볼륨 좀 낮춰"
+    slots:
+      area: "거실"
+      volume_step: "down"
+    response: "볼륨을 조절했습니다"
+  - sentences:
+      - "거실 볼륨 10퍼센트 올려줘"
+    slots:
+      area: "거실"
+      volume_step: 10
+    response: "볼륨을 조절했습니다"
+  - sentences:
+      - "거실 볼륨 10프로 줄여줘"
+    slots:
+      area: "거실"
+      volume_step: -10
+    response: "볼륨을 조절했습니다"

@@ -1,0 +1,15 @@
+---
+language: ko
+lists:
+  volume_step:
+    values:
+      - in: (키워|키워줘|올려|올려줘|높여|높여줘|크게|크게 해줘)
+        out: up
+      - in: (줄여|줄여줘|내려|내려줘|낮춰|낮춰줘|작게|작게 해줘)
+        out: down
+  volume_mapping:
+    values:
+      - in: (최대|최대로|가장 크게|제일 크게)
+        out: 100
+      - in: (최소|최소로|가장 작게|제일 작게)
+        out: 1

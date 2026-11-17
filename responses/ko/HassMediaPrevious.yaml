@@ -1,0 +1,5 @@
+language: ko
+responses:
+  intents:
+    HassMediaPrevious:
+      default: "이전으로 돌아갑니다"

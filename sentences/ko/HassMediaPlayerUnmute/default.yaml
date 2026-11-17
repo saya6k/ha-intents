@@ -1,0 +1,10 @@
+---
+# HassMediaPlayerUnmute - default
+# example: 음소거 해제
+
+language: "ko"
+data:
+  - sentences:
+      - "[<here>] (음소거 해제|음소거 해제해|음소거 풀어|음소거 풀어줘|소리 켜|소리 켜줘)"
+    example: "음소거 해제"
+    response: "default"

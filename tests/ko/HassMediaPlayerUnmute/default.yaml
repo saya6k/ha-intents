@@ -1,0 +1,9 @@
+---
+# HassMediaPlayerUnmute - default
+
+language: "ko"
+tests:
+  - sentences:
+      - "음소거 해제"
+      - "소리 켜줘"
+    response: "음소거를 해제했습니다"

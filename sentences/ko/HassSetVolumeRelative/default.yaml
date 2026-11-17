@@ -1,0 +1,12 @@
+---
+# HassSetVolumeRelative - default
+# example: 소리 좀 키워줘
+
+language: "ko"
+data:
+  - sentences:
+      - "[<here>] (볼륨|소리|음량)[을|를|은|는] [좀|조금|더|좀 더] {volume_step}"
+      - "[<here>] (볼륨|소리|음량)[을|를|은|는] {volume_step_up:volume_step}[ ][%|퍼센트|프로] (키워|키워줘|올려|올려줘|높여|높여줘)"
+      - "[<here>] (볼륨|소리|음량)[을|를|은|는] {volume_step_down:volume_step}[ ][%|퍼센트|프로] (줄여|줄여줘|내려|내려줘|낮춰|낮춰줘)"
+    example: "소리 좀 키워줘"
+    response: "default"

@@ -1,0 +1,11 @@
+---
+# HassSetVolume - area_only
+# example: 거실 볼륨 30으로 맞춰줘
+
+language: "ko"
+data:
+  - sentences:
+      - "{area}[의|에서] (볼륨|소리|음량)[을|를|은|는] {volume:volume_level}[ ][%|퍼센트|프로][로|으로] [(설정|설정해|맞춰|맞춰줘|변경|변경해|바꿔|바꿔줘|해)]"
+      - "{area}[의|에서] (볼륨|소리|음량)[을|를|은|는] {volume_mapping:volume_level}[로] [(설정|설정해|맞춰|맞춰줘|변경|변경해|바꿔|바꿔줘|해)]"
+    example: "거실 볼륨 30으로 맞춰줘"
+    response: "default"

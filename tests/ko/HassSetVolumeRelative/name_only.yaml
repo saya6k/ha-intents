@@ -1,0 +1,34 @@
+---
+# HassSetVolumeRelative - name_only
+
+language: "ko"
+entities:
+  - name: "티비"
+    domain: "media_player"
+tests:
+  - sentences:
+      - "티비 소리 좀 키워줘"
+      - "티비 볼륨 올려"
+    slots:
+      name: "티비"
+      volume_step: "up"
+    response: "볼륨을 조절했습니다"
+  - sentences:
+      - "티비 소리 줄여줘"
+      - "티비 볼륨 좀 낮춰"
+    slots:
+      name: "티비"
+      volume_step: "down"
+    response: "볼륨을 조절했습니다"
+  - sentences:
+      - "티비 볼륨 10퍼센트 올려줘"
+    slots:
+      name: "티비"
+      volume_step: 10
+    response: "볼륨을 조절했습니다"
+  - sentences:
+      - "티비 볼륨 10프로 줄여줘"
+    slots:
+      name: "티비"
+      volume_step: -10
+    response: "볼륨을 조절했습니다"

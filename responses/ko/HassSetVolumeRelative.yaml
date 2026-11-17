@@ -1,0 +1,5 @@
+language: ko
+responses:
+  intents:
+    HassSetVolumeRelative:
+      default: "볼륨을 조절했습니다"

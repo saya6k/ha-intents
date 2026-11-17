@@ -1,0 +1,5 @@
+language: ko
+responses:
+  intents:
+    HassMediaPlayerMute:
+      default: "음소거했습니다"
