@@ -1,0 +1,30 @@
+---
+# HassLightSet - floor_color
+
+language: "ko"
+floors:
+  - name: "1층"
+areas:
+  - name: "침실"
+    floor: "1층"
+
+entities:
+  - name: "천장 조명"
+    domain: "light"
+    area: "침실"
+
+tests:
+  - sentences:
+      - "1층 색상 빨강으로 설정"
+      - "1층의 색상 빨강으로 변경"
+      - "1층 빨강으로 변경"
+      - "1층 빨강 설정"
+      - "1층 색상 빨강 설정"
+      - "1층 빨강"
+      - "1층 모든 조명 빨강으로 설정"
+      - "1층 모든 조명의 빨강으로 설정"
+      - "모든 1층 조명 색상 빨강으로 설정"
+    slots:
+      color: red
+      floor: "1층"
+    response: "색상이 설정되었습니다"

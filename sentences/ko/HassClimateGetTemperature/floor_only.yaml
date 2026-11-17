@@ -1,0 +1,17 @@
+---
+# HassClimateGetTemperature - floor_only
+# example: 거실 온도 몇 도야
+# slots: {floor}
+
+language: "ko"
+data:
+  - sentences:
+      - "{floor} <temp> 몇 도야"
+      - "{floor} <temp> 얼마야"
+      - "{floor} <temp> 몇이야"
+      - "{floor} <temp> (알아|알려줘|말해줘)"
+      - "{floor} <temp> <what_is>"
+      - "{floor} 얼마나 (더워|추워|따뜻해|시원해)"
+      - "{floor} (더워|추워|따뜻해|시원해)"
+    example: "거실 온도 몇 도야"
+    response: "default"
