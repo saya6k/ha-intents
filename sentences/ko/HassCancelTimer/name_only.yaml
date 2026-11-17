@@ -1,0 +1,11 @@
+---
+# HassCancelTimer - name_only
+# example: 피자 타이머 취소
+# slots: {name}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_name:name} 타이머 <timer_cancel>"
+    example: "피자 타이머 취소"
+    response: "default"

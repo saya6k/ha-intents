@@ -1,0 +1,12 @@
+---
+# HassStartTimer - name_seconds
+# example: 30초 피자 타이머 설정
+# slots: {name}, {seconds}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_seconds:seconds}초[짜리] {timer_name:name} 타이머 [<timer_set>]"
+      - "{timer_name:name} 타이머 {timer_seconds:seconds}초[으로|로] [<timer_set>]"
+    example: "30초 피자 타이머 설정"
+    response: "default"

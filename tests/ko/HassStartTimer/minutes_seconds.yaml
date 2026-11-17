@@ -1,0 +1,13 @@
+---
+# HassStartTimer - minutes_seconds
+
+language: "ko"
+tests:
+  - sentences:
+      - "5분 30초 타이머 설정"
+      - "5분 30초짜리 타이머 맞춰줘"
+      - "타이머 5분 30초로 맞춰줘"
+    slots:
+      minutes: 5
+      seconds: 30
+    response: "5분 30초 타이머를 설정했습니다"

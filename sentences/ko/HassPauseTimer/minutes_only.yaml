@@ -1,0 +1,11 @@
+---
+# HassPauseTimer - minutes_only
+# example: 5분 타이머 일시정지
+# slots: {start_minutes}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_minutes:start_minutes}분[짜리] 타이머 (일시정지|일시 정지|일시정지해|일시 정지해|멈춰|정지|정지해)"
+    example: "5분 타이머 일시정지"
+    response: "default"

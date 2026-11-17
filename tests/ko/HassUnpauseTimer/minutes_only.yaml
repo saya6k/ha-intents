@@ -1,0 +1,18 @@
+---
+# HassUnpauseTimer - minutes_only
+
+language: "ko"
+timers:
+  - is_active: false
+    start_minutes: 5
+    total_seconds_left: 300
+    rounded_hours_left: 0
+    rounded_minutes_left: 5
+    rounded_seconds_left: 0
+tests:
+  - sentences:
+      - "5분 타이머 다시 시작"
+      - "5분짜리 타이머 다시 시작"
+    slots:
+      start_minutes: 5
+    response: "타이머를 다시 시작했습니다"

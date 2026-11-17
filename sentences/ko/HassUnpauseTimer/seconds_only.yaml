@@ -1,0 +1,11 @@
+---
+# HassUnpauseTimer - seconds_only
+# example: 30초 타이머 다시 시작
+# slots: {start_seconds}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_seconds:start_seconds}초[짜리] 타이머 (다시 시작|다시 시작해|재개|재개해|계속|계속해)"
+    example: "30초 타이머 다시 시작"
+    response: "default"
