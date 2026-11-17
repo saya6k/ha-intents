@@ -1,0 +1,43 @@
+---
+# HassTurnOff - floor_device_class_cover
+
+language: "ko"
+floors:
+  - name: "1층"
+  - name: "2층"
+areas:
+  - name: "주방"
+    floor: "1층"
+  - name: "침실"
+    floor: "2층"
+
+entities:
+  - name: "주방 가리개"
+    domain: "cover"
+    attributes:
+      device_class: "window"
+    area: "주방"
+  - name: "침실 차양"
+    domain: "cover"
+    attributes:
+      device_class: "blind"
+    area: "침실"
+
+tests:
+  - sentences:
+      - "1층에 창문 닫아"
+      - "1층 창문 닫아"
+    slots:
+      floor: "1층"
+      domain: "cover"
+      device_class: "window"
+    response: "창문 닫았습니다"
+
+  - sentences:
+      - "2층에 블라인드 닫아"
+      - "2층 블라인드 닫아"
+    slots:
+      floor: "2층"
+      domain: "cover"
+      device_class: "blind"
+    response: "블라인드 닫았습니다"

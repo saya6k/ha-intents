@@ -5,6 +5,20 @@ responses:
       default: "{{ slots.name|default('') }} 껐습니다"
       lights_area: "조명을 껐습니다"
       fans_area: "팬을 껐습니다"
+      lights_floor: "조명을 껐습니다"
+      fans_floor: "팬을 껐습니다"
       cover: "{{ slots.name|default('') }} 닫았습니다"
-      cover_device_class: "{{ slots.device_class }} 닫았습니다"
+      cover_device_class: >-
+        {% set names = {
+          "awning": "차양",
+          "blind": "블라인드",
+          "curtain": "커튼",
+          "door": "문",
+          "garage": "차고 문",
+          "gate": "대문",
+          "shade": "셰이드",
+          "shutter": "루버",
+          "window": "창문"
+        } %}
+        {{ names.get(slots.device_class, slots.device_class) }} 닫았습니다
       lock: "잠금 해제되었습니다"
