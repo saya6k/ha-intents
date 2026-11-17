@@ -1,0 +1,27 @@
+---
+# HassTurnOff - floor_domain
+# example: 주방에 모든 조명 꺼줘
+# slots: {floor}, {domain}
+
+language: "ko"
+data:
+  # lights
+  - sentences:
+      - "{floor}[에|의] [<all>] <light> [<turn>] 꺼[줘|줄래]"
+      - "[<all>] {floor} <light> [<turn>] 꺼[줘|줄래]"
+      - "{floor}에 있는 [<all>] <light> [<turn>] 꺼[줘|줄래]"
+      - "{floor}에 있는 [<all>] <light> 종료"
+      - "[<all>] {floor} <light> 종료"
+    example: "주방에 모든 조명 꺼줘"
+    inferred_domain: "light"
+    response: "lights_floor"
+
+  # fans
+  - sentences:
+      - "{floor}[에] [<all>] 팬 [<turn>] 꺼[줘|줄래]"
+      - "[<all>] {floor} 팬 [<turn>] 꺼[줘|줄래]"
+      - "{floor}에 [<all>] 팬 종료"
+      - "[<all>] {floor} 팬 종료"
+    example: "거실에 팬 꺼줘"
+    inferred_domain: "fan"
+    response: "fans_floor"

@@ -5,6 +5,8 @@ responses:
       default: "{{ slots.name|default('') }} 켰습니다"
       lights_area: "조명을 켰습니다"
       fans_area: "팬을 켰습니다"
+      lights_floor: "조명을 켰습니다"
+      fans_floor: "팬을 켰습니다"
       cover: "{{ slots.name|default('') }} 열었습니다"
       cover_device_class: >-
         {% set names = {

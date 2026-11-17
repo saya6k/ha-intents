@@ -1,0 +1,23 @@
+---
+# HassTurnOff - name_floor
+# example: 거실 왼쪽 커튼 닫아
+# slots: {name}, {floor}
+
+language: "ko"
+data:
+  # off-able domains
+  - sentences:
+      - "{floor} {name} [<turn>] 꺼[줘|줄래]"
+    example: "거실 무드등 꺼줘"
+    name_domains: "default"
+    response: "default"
+
+  # covers
+  - sentences:
+      - "{floor} {name} <close>"
+    example: "거실 왼쪽 커튼 닫아"
+    name_domains:
+      - "cover"
+    response: "cover"
+
+  # locks
