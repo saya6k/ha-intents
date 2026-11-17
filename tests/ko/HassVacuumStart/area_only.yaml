@@ -1,0 +1,20 @@
+---
+# HassVacuumStart - area_only
+
+language: "ko"
+areas:
+  - name: "거실"
+    floor: "일층"
+floors:
+  - name: "일층"
+entities:
+  - name: "로봇청소기"
+    domain: "vacuum"
+    area: "거실"
+tests:
+  - sentences:
+      - "거실 청소기 돌려줘"
+      - "거실 로봇청소기 시작해"
+    slots:
+      area: "거실"
+    response: "청소를 시작했습니다"
