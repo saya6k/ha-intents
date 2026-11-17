@@ -1,0 +1,21 @@
+---
+# HassSetVolume - name_only
+
+language: "ko"
+entities:
+  - name: "티비"
+    domain: "media_player"
+tests:
+  - sentences:
+      - "티비 볼륨 30으로 맞춰줘"
+      - "티비의 소리를 30퍼센트로 해"
+    slots:
+      name: "티비"
+      volume_level: 30
+    response: "볼륨을 설정했습니다"
+  - sentences:
+      - "티비 볼륨 최소로"
+    slots:
+      name: "티비"
+      volume_level: 1
+    response: "볼륨을 설정했습니다"

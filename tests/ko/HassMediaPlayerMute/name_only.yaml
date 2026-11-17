@@ -1,0 +1,14 @@
+---
+# HassMediaPlayerMute - name_only
+
+language: "ko"
+entities:
+  - name: "티비"
+    domain: "media_player"
+tests:
+  - sentences:
+      - "티비 음소거"
+      - "티비 소리 꺼줘"
+    slots:
+      name: "티비"
+    response: "음소거했습니다"

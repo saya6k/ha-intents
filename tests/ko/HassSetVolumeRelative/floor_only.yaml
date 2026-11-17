@@ -1,0 +1,33 @@
+---
+# HassSetVolumeRelative - floor_only
+
+language: "ko"
+floors:
+  - name: "이층"
+tests:
+  - sentences:
+      - "이층 소리 좀 키워줘"
+      - "이층 볼륨 올려"
+    slots:
+      floor: "이층"
+      volume_step: "up"
+    response: "볼륨을 조절했습니다"
+  - sentences:
+      - "이층 소리 줄여줘"
+      - "이층 볼륨 좀 낮춰"
+    slots:
+      floor: "이층"
+      volume_step: "down"
+    response: "볼륨을 조절했습니다"
+  - sentences:
+      - "이층 볼륨 10퍼센트 올려줘"
+    slots:
+      floor: "이층"
+      volume_step: 10
+    response: "볼륨을 조절했습니다"
+  - sentences:
+      - "이층 볼륨 10프로 줄여줘"
+    slots:
+      floor: "이층"
+      volume_step: -10
+    response: "볼륨을 조절했습니다"

@@ -1,0 +1,14 @@
+---
+# HassMediaPlayerUnmute - name_only
+
+language: "ko"
+entities:
+  - name: "티비"
+    domain: "media_player"
+tests:
+  - sentences:
+      - "티비 음소거 해제"
+      - "티비 소리 켜줘"
+    slots:
+      name: "티비"
+    response: "음소거를 해제했습니다"

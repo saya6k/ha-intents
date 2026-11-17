@@ -1,0 +1,9 @@
+---
+# HassMediaPlayerMute - default
+
+language: "ko"
+tests:
+  - sentences:
+      - "음소거"
+      - "소리 꺼줘"
+    response: "음소거했습니다"

@@ -1,0 +1,24 @@
+---
+# HassSetVolume - area_only
+
+language: "ko"
+areas:
+  - name: "거실"
+entities:
+  - name: "티비"
+    domain: "media_player"
+    area: "거실"
+tests:
+  - sentences:
+      - "거실 볼륨 30으로 맞춰줘"
+      - "거실에서 소리를 30프로로 해"
+    slots:
+      area: "거실"
+      volume_level: 30
+    response: "볼륨을 설정했습니다"
+  - sentences:
+      - "거실 볼륨 최대로"
+    slots:
+      area: "거실"
+      volume_level: 100
+    response: "볼륨을 설정했습니다"

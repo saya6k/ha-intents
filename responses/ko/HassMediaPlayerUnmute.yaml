@@ -1,0 +1,5 @@
+language: ko
+responses:
+  intents:
+    HassMediaPlayerUnmute:
+      default: "음소거를 해제했습니다"
