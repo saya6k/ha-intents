@@ -1,0 +1,8 @@
+---
+language: ko
+lists:
+  # "커튼 반만 열어줘": half way
+  position_half:
+    values:
+      - in: "반"
+        out: 50

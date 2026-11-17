@@ -17,6 +17,7 @@ tests:
   - sentences:
       - "블라인드 50퍼센트로 내려줘"
       - "블라인드 50프로로 맞춰줘"
+      - "블라인드 반만 내려줘"
     slots:
       domain: "cover"
       device_class: "blind"
