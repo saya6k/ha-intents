@@ -1,0 +1,25 @@
+---
+# HassSetPosition - area_device_class
+
+language: "ko"
+areas:
+  - name: "거실"
+    floor: "일층"
+floors:
+  - name: "일층"
+entities:
+  - name: "창가 블라인드"
+    domain: "cover"
+    area: "거실"
+    attributes:
+      device_class: "blind"
+tests:
+  - sentences:
+      - "거실 블라인드 50퍼센트로 내려줘"
+      - "거실 블라인드 50프로로 맞춰줘"
+    slots:
+      area: "거실"
+      domain: "cover"
+      device_class: "blind"
+      position: 50
+    response: "블라인드 위치를 설정했습니다"
