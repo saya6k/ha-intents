@@ -1,0 +1,15 @@
+---
+# HassVacuumReturnToBase - name_only
+
+language: "ko"
+entities:
+  - name: "로봇청소기"
+    domain: "vacuum"
+    area: "거실"
+tests:
+  - sentences:
+      - "로봇청소기 충전대로 보내줘"
+      - "로봇청소기 복귀시켜"
+    slots:
+      name: "로봇청소기"
+    response: "충전대로 돌아갑니다"
