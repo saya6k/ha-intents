@@ -1,0 +1,8 @@
+---
+language: ko
+lists:
+  # "1시간 반": an hour and a half
+  timer_half:
+    values:
+      - in: "반"
+        out: 30

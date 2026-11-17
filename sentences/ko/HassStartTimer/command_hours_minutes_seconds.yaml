@@ -1,0 +1,11 @@
+---
+# HassStartTimer - command_hours_minutes_seconds
+# example: 1시간 5분 10초 후에 불 꺼줘
+# slots: {conversation_command}, {hours}, {minutes}, {seconds}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_hours:hours}시간 {timer_minutes:minutes}분 {timer_seconds:seconds}초 (후에|뒤에|있다가) {timer_command:conversation_command}"
+    example: "1시간 5분 10초 후에 불 꺼줘"
+    response: "command"

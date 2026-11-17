@@ -1,0 +1,11 @@
+---
+# HassTimerStatus - minutes_only
+# example: 5분 타이머 얼마나 남았어
+# slots: {start_minutes}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_minutes:start_minutes}분[짜리] 타이머 (얼마나 남았어|얼마 남았어|얼마나 남았나요|상태|확인|어때)"
+    example: "5분 타이머 얼마나 남았어"
+    response: "default"

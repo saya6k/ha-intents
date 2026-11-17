@@ -1,0 +1,11 @@
+---
+# HassPauseTimer - name_only
+# example: 피자 타이머 일시정지
+# slots: {name}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_name:name} 타이머 (일시정지|일시 정지|일시정지해|일시 정지해|멈춰|정지|정지해)"
+    example: "피자 타이머 일시정지"
+    response: "default"

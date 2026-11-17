@@ -1,0 +1,18 @@
+---
+# HassTimerStatus - hours_only
+
+language: "ko"
+timers:
+  - is_active: true
+    start_hours: 1
+    total_seconds_left: 3600
+    rounded_hours_left: 1
+    rounded_minutes_left: 0
+    rounded_seconds_left: 0
+tests:
+  - sentences:
+      - "1시간 타이머 얼마나 남았어"
+      - "1시간짜리 타이머 얼마나 남았어"
+    slots:
+      start_hours: 1
+    response: "1시간 남았습니다."

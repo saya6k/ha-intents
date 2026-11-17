@@ -1,0 +1,14 @@
+---
+# HassStartTimer - command_hours_minutes
+
+language: "ko"
+tests:
+  - sentences:
+      - "1시간 30분 후에 불 꺼줘"
+      - "1시간 30분 뒤에 불 꺼줘"
+      - "1시간 반 있다가 불 꺼줘"
+    slots:
+      hours: 1
+      minutes: 30
+      conversation_command: "불 꺼줘"
+    response: "1시간 30분 후에 명령을 실행합니다"

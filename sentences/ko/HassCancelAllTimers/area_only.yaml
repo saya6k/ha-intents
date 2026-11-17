@@ -1,0 +1,12 @@
+---
+# HassCancelAllTimers - area_only
+# example: 주방 타이머 전부 취소
+# slots: {area}
+
+language: "ko"
+data:
+  - sentences:
+      - "{area}[의|에|에 있는] (<all>|전체) 타이머 <timer_cancel>"
+      - "{area}[의|에|에 있는] 타이머 (전부|모두|다) <timer_cancel>"
+    example: "주방 타이머 전부 취소"
+    response: "area"

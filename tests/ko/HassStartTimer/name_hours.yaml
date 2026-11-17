@@ -1,0 +1,13 @@
+---
+# HassStartTimer - name_hours
+
+language: "ko"
+tests:
+  - sentences:
+      - "1시간 피자 타이머 설정"
+      - "1시간짜리 피자 타이머"
+      - "피자 타이머 1시간으로 맞춰줘"
+    slots:
+      name: "피자"
+      hours: 1
+    response: "피자 1시간 타이머를 설정했습니다"

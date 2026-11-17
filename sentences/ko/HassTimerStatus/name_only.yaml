@@ -1,0 +1,11 @@
+---
+# HassTimerStatus - name_only
+# example: 피자 타이머 얼마나 남았어
+# slots: {name}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_name:name} 타이머 (얼마나 남았어|얼마 남았어|얼마나 남았나요|상태|확인|어때)"
+    example: "피자 타이머 얼마나 남았어"
+    response: "default"
