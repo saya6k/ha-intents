@@ -18,11 +18,11 @@ tests:
     slots:
       domain: "cover"
       device_class: "garage"
-    response: "garage 닫았습니다"
+    response: "차고 문 닫았습니다"
 
   - sentences:
       - "커튼 닫아"
     slots:
       domain: "cover"
       device_class: "curtain"
-    response: "curtain 닫았습니다"
+    response: "커튼 닫았습니다"
