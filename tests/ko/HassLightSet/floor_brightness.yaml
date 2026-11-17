@@ -1,0 +1,51 @@
+---
+# HassLightSet - floor_brightness
+
+language: "ko"
+floors:
+  - name: "1층"
+areas:
+  - name: "침실"
+    floor: "1층"
+
+entities:
+  - name: "천장 조명"
+    domain: "light"
+    area: "침실"
+
+tests:
+  - sentences:
+      - "1층 밝기를 50%로 설정"
+      - "1층의 밝기를 50%로 변경"
+      - "1층을 50% 밝기로 변경"
+      - "1층 50%로 설정"
+      - "1층 50%로"
+      - "1층 50%로 변경"
+    slots:
+      brightness: 50
+      floor: "1층"
+    response: "밝기가 설정되었습니다"
+
+  - sentences:
+      - "1층 밝기를 최대로 설정"
+      - "1층의 밝기를 가장 밝게 변경"
+      - "1층 밝기 최대로 설정"
+      - "1층 최대 밝기로"
+      - "1층 최대 밝기"
+      - "1층 가장 밝게"
+    slots:
+      brightness: 100
+      floor: "1층"
+    response: "밝기가 설정되었습니다"
+
+  - sentences:
+      - "1층 밝기를 최소로 설정"
+      - "1층의 밝기를 가장 어둡게 변경"
+      - "1층 밝기 최소로 설정"
+      - "1층 최소 밝기로"
+      - "1층 최소 밝기"
+      - "1층 가장 어둡게"
+    slots:
+      brightness: 1
+      floor: "1층"
+    response: "밝기가 설정되었습니다"
