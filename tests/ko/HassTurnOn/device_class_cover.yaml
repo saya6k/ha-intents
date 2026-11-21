@@ -11,6 +11,10 @@ entities:
     domain: "cover"
     attributes:
       device_class: "curtain"
+  - name: "전동 루버"
+    domain: "cover"
+    attributes:
+      device_class: "shutter"
 
 tests:
   - sentences:
@@ -26,3 +30,10 @@ tests:
       domain: "cover"
       device_class: "curtain"
     response: "커튼 열었습니다"
+
+  - sentences:
+      - "루버 열어"
+    slots:
+      domain: "cover"
+      device_class: "shutter"
+    response: "셔터 열었습니다"

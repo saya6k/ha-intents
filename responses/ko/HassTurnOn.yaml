@@ -17,7 +17,7 @@ responses:
           "garage": "차고 문",
           "gate": "대문",
           "shade": "셰이드",
-          "shutter": "루버",
+          "shutter": "셔터",
           "window": "창문"
         } %}
         {{ names.get(slots.device_class, slots.device_class) }} 열었습니다
