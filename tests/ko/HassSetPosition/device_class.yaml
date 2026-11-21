@@ -13,6 +13,11 @@ entities:
     area: "거실"
     attributes:
       device_class: "blind"
+  - name: "전동 셔터"
+    domain: "cover"
+    area: "거실"
+    attributes:
+      device_class: "shutter"
 tests:
   - sentences:
       - "블라인드 50퍼센트로 내려줘"
@@ -23,3 +28,11 @@ tests:
       device_class: "blind"
       position: 50
     response: "블라인드 위치를 설정했습니다"
+  - sentences:
+      - "셔터 30퍼센트로 올려줘"
+      - "루버 30프로로 맞춰줘"
+    slots:
+      domain: "cover"
+      device_class: "shutter"
+      position: 30
+    response: "셔터 위치를 설정했습니다"
