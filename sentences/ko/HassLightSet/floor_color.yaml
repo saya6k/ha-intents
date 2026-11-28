@@ -1,0 +1,17 @@
+---
+# HassLightSet - floor_color
+# example: 침실 색상 빨강으로 설정
+# slots: {floor}, {color}, {domain}
+
+language: "ko"
+data:
+  - sentences:
+      - "{floor} [색상] {color}[로|으로] [<set>]"
+      - "{floor}의 [색상] {color}[로|으로] [<set>]"
+      - "{floor} 모든 <light> [색상] {color}[로|으로] [<set>]"
+      - "{floor} 모든 <light>의 [색상] {color}[로|으로] [<set>]"
+      - "모든 {floor} <light> [색상] {color}[로|으로] [<set>]"
+      - "{floor}[의|에] <light>[의] [색상|색] {color}[로|으로] [<set>]"
+    example: "침실 색상 빨강으로 설정"
+    inferred_domain: "light"
+    response: "color"

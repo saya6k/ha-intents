@@ -1,0 +1,30 @@
+---
+# HassClimateGetTemperature - floor_only
+
+language: "ko"
+floors:
+  - name: "1층"
+areas:
+  - name: "거실"
+    floor: "1층"
+
+entities:
+  - name: "거실 온도조절기"
+    domain: "climate"
+    area: "거실"
+    state: "20"
+    attributes:
+      current_temperature: 20
+
+tests:
+  - sentences:
+      - "1층 온도 몇 도야"
+      - "1층 온도 얼마야"
+      - "1층 온도 몇이야"
+      - "1층 온도 알려줘"
+      - "1층 온도 뭐야"
+      - "1층 얼마나 더워"
+      - "1층 더워"
+    slots:
+      floor: "1층"
+    response: "20입니다"
