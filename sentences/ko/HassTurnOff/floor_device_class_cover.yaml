@@ -1,0 +1,13 @@
+---
+# HassTurnOff - floor_device_class_cover
+# example: 주방에 창문 닫아
+# slots: {floor}, {device_class}, {domain}
+
+language: "ko"
+data:
+  - sentences:
+      - "{floor}에 {cover_classes:device_class} <close>"
+      - "{floor} {cover_classes:device_class} <close>"
+    example: "주방에 창문 닫아"
+    inferred_domain: "cover"
+    response: "cover_device_class"

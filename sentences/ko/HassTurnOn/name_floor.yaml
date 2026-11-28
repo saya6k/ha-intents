@@ -1,0 +1,23 @@
+---
+# HassTurnOn - name_floor
+# example: 거실 왼쪽 커튼 열어
+# slots: {name}, {floor}
+
+language: "ko"
+data:
+  # on-able domains
+  - sentences:
+      - "{floor} {name} [<turn>] 켜[줘|줄래]"
+    example: "거실 무드등 켜줘"
+    name_domains: "default"
+    response: "default"
+
+  # covers
+  - sentences:
+      - "{floor} {name} <open>"
+    example: "거실 왼쪽 커튼 열어"
+    name_domains:
+      - "cover"
+    response: "cover"
+
+  # locks

@@ -1,0 +1,43 @@
+---
+# HassTurnOn - name_floor
+
+language: "ko"
+floors:
+  - name: "1층"
+  - name: "2층"
+areas:
+  - name: "거실"
+    floor: "1층"
+  - name: "현관"
+    floor: "2층"
+
+entities:
+  - name: "무드등"
+    domain: "light"
+    area: "거실"
+  - name: "왼쪽 커튼"
+    domain: "cover"
+    area: "거실"
+  - name: "앞문"
+    domain: "lock"
+    area: "현관"
+
+tests:
+  # on-able domains
+  - sentences:
+      - "1층 무드등 켜줘"
+      - "1층 무드등 전원 켜"
+    slots:
+      floor: "1층"
+      name: "무드등"
+    response: "무드등 켰습니다"
+
+  # covers
+  - sentences:
+      - "1층 왼쪽 커튼 열어"
+    slots:
+      floor: "1층"
+      name: "왼쪽 커튼"
+    response: "왼쪽 커튼 열었습니다"
+
+  # locks

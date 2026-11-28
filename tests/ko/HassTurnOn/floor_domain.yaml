@@ -1,0 +1,54 @@
+---
+# HassTurnOn - floor_domain
+
+language: "ko"
+floors:
+  - name: "1층"
+  - name: "2층"
+areas:
+  - name: "거실"
+    floor: "1층"
+  - name: "주방"
+    floor: "2층"
+
+entities:
+  - name: "천장등"
+    domain: "light"
+    area: "거실"
+  - name: "천장 선풍기"
+    domain: "fan"
+    area: "주방"
+
+tests:
+  # lights
+  - sentences:
+      - "1층에 모든 조명 전원 켜"
+      - "1층 불 다 켜줘"
+      - "1층 불 좀 켜줘"
+      - "1층 모든 조명 전원 켜"
+      - "모든 1층 조명 켜"
+      - "1층에 있는 모든 조명 켜"
+      - "1층에 있는 모든 조명 작동"
+      - "모든 1층 조명 작동"
+      - "1층에 모든 조명 전원 켜줘"
+      - "1층에 모든 조명 전원 켜줄래"
+    slots:
+      floor: "1층"
+      domain: "light"
+    response: "조명을 켰습니다"
+
+  # fans
+  - sentences:
+      - "2층에 팬 전원 켜"
+      - "2층 팬 켜"
+      - "모든 2층 팬 켜"
+      - "2층에 모든 팬 켜"
+      - "2층에 모든 팬 작동"
+      - "모든 2층 팬 작동"
+      - "2층 모든 팬 켜"
+      - "2층 팬 켜줘"
+      - "2층 팬 켜줄래"
+    slots:
+      floor: "2층"
+      domain: "fan"
+    response: "팬을 켰습니다"

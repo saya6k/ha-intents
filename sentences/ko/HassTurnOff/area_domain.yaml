@@ -7,9 +7,9 @@ language: "ko"
 data:
   # lights
   - sentences:
-      - "{area}[에|의] [<all>] <light> [<turn>] 꺼[줘|줄래]"
-      - "[<all>] {area} <light> [<turn>] 꺼[줘|줄래]"
-      - "{area}에 있는 [<all>] <light> [<turn>] 꺼[줘|줄래]"
+      - "{area}[에|의] [<all>] <light> [다|전부|모두|좀] [<turn>] 꺼[줘|줄래]"
+      - "[<all>] {area} <light> [다|전부|모두|좀] [<turn>] 꺼[줘|줄래]"
+      - "{area}에 있는 [<all>] <light> [다|전부|모두|좀] [<turn>] 꺼[줘|줄래]"
       - "{area}에 있는 [<all>] <light> 종료"
       - "[<all>] {area} <light> 종료"
     example: "주방에 모든 조명 꺼줘"
@@ -18,8 +18,8 @@ data:
 
   # fans
   - sentences:
-      - "{area}[에] [<all>] 팬 [<turn>] 꺼[줘|줄래]"
-      - "[<all>] {area} 팬 [<turn>] 꺼[줘|줄래]"
+      - "{area}[에] [<all>] 팬 [다|전부|모두|좀] [<turn>] 꺼[줘|줄래]"
+      - "[<all>] {area} 팬 [다|전부|모두|좀] [<turn>] 꺼[줘|줄래]"
       - "{area}에 [<all>] 팬 종료"
       - "[<all>] {area} 팬 종료"
     example: "거실에 팬 꺼줘"
