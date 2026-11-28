@@ -1,0 +1,17 @@
+---
+# HassMediaPrevious - area_only
+
+language: "ko"
+areas:
+  - name: "거실"
+entities:
+  - name: "티비"
+    domain: "media_player"
+    area: "거실"
+tests:
+  - sentences:
+      - "거실 이전 곡"
+      - "거실에서 이전 노래 틀어줘"
+    slots:
+      area: "거실"
+    response: "이전으로 돌아갑니다"

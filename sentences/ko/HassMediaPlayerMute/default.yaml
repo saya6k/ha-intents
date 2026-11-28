@@ -1,0 +1,10 @@
+---
+# HassMediaPlayerMute - default
+# example: 음소거
+
+language: "ko"
+data:
+  - sentences:
+      - "[<here>] (음소거|음소거해|소리 꺼|소리 꺼줘|소리 죽여|소리 죽여줘)"
+    example: "음소거"
+    response: "default"

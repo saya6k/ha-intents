@@ -1,0 +1,11 @@
+---
+# HassMediaPrevious - default
+# example: 이전 곡
+
+language: "ko"
+data:
+  - sentences:
+      - "[<here>] (이전|앞) (곡|노래|트랙|화) [재생|틀어|틀어줘]"
+      - "[<here>] (이전|앞) (곡|노래|트랙|화)[으로|로] (넘겨|돌아가|돌려)[줘]"
+    example: "이전 곡"
+    response: "default"

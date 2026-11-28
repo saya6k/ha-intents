@@ -1,0 +1,10 @@
+---
+# HassMediaPrevious - default
+
+language: "ko"
+tests:
+  - sentences:
+      - "이전 곡"
+      - "이전 노래 틀어줘"
+      - "앞 곡으로 돌아가줘"
+    response: "이전으로 돌아갑니다"

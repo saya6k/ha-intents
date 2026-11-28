@@ -1,0 +1,14 @@
+---
+# HassMediaPrevious - name_only
+
+language: "ko"
+entities:
+  - name: "티비"
+    domain: "media_player"
+tests:
+  - sentences:
+      - "티비 이전 곡"
+      - "티비에서 이전 화 틀어줘"
+    slots:
+      name: "티비"
+    response: "이전으로 돌아갑니다"

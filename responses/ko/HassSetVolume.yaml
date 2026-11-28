@@ -1,0 +1,5 @@
+language: ko
+responses:
+  intents:
+    HassSetVolume:
+      default: "볼륨을 설정했습니다"
