@@ -1,0 +1,5 @@
+language: ko
+responses:
+  intents:
+    HassVacuumReturnToBase:
+      default: "충전대로 돌아갑니다"

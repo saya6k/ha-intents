@@ -1,0 +1,5 @@
+language: ko
+responses:
+  intents:
+    HassVacuumStart:
+      default: "청소를 시작했습니다"

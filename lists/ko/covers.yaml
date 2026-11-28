@@ -26,7 +26,7 @@ lists:
         out: gate
       - in: (셰이드|쉐이드|버티컬)
         out: shade
-      - in: (루버|루버창)
+      - in: (셔터|루버|루버창)
         out: shutter
       - in: (창문|유리창|창)
         out: window

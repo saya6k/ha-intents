@@ -1,0 +1,14 @@
+---
+# HassSetPosition - name_only
+# example: 거실 블라인드 50퍼센트로 올려줘
+
+language: "ko"
+data:
+  - sentences:
+      - "{name}[을|를|의] {position}[ ][%|퍼센트|프로][로|으로] [(<open>|<close>|설정|설정해|설정해줘|맞춰|맞춰줘|해)]"
+      - "{name}[을|를|의] {position_half:position}[만|으로] (<open>|<close>)"
+    example: "거실 블라인드 50퍼센트로 올려줘"
+    name_domains:
+      - "cover"
+      - "valve"
+    response: "default"

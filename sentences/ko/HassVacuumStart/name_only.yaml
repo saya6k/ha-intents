@@ -1,0 +1,13 @@
+---
+# HassVacuumStart - name_only
+# example: 로봇청소기 돌려줘
+
+language: "ko"
+data:
+  - sentences:
+      - "{name}[를|을] (돌려|돌려줘|시작|시작해|시작해줘|작동|작동해|작동시켜|켜|켜줘|청소 시작|청소 시작해|청소 시작해줘)"
+      - "{name}[로|으로] 청소[해|해줘]"
+    example: "로봇청소기 돌려줘"
+    name_domains:
+      - "vacuum"
+    response: "default"
