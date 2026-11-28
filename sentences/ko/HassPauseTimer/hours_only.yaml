@@ -1,0 +1,11 @@
+---
+# HassPauseTimer - hours_only
+# example: 1시간 타이머 일시정지
+# slots: {start_hours}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_hours:start_hours}시간[짜리] 타이머 (일시정지|일시 정지|일시정지해|일시 정지해|멈춰|정지|정지해)"
+    example: "1시간 타이머 일시정지"
+    response: "default"

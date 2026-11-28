@@ -1,0 +1,21 @@
+---
+# HassTimerStatus - area_only
+
+language: "ko"
+areas:
+  - name: "주방"
+timers:
+  - is_active: true
+    area: "주방"
+    start_minutes: 5
+    total_seconds_left: 300
+    rounded_hours_left: 0
+    rounded_minutes_left: 5
+    rounded_seconds_left: 0
+tests:
+  - sentences:
+      - "주방 타이머 얼마나 남았어"
+      - "주방에 있는 타이머 얼마나 남았어"
+    slots:
+      area: "주방"
+    response: "5분 남았습니다."

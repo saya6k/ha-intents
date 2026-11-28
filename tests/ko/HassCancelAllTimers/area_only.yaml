@@ -1,0 +1,20 @@
+---
+# HassCancelAllTimers - area_only
+
+language: "ko"
+areas:
+  - name: "주방"
+timers:
+  - start_minutes: 5
+    total_seconds_left: 300
+    area: "주방"
+  - start_minutes: 10
+    total_seconds_left: 600
+    area: "주방"
+tests:
+  - sentences:
+      - "주방 타이머 전부 취소"
+      - "주방의 모든 타이머 취소해"
+    slots:
+      area: "주방"
+    response: "주방의 타이머 2개를 취소했습니다."

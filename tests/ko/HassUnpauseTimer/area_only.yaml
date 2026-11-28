@@ -1,0 +1,21 @@
+---
+# HassUnpauseTimer - area_only
+
+language: "ko"
+areas:
+  - name: "주방"
+timers:
+  - is_active: false
+    area: "주방"
+    start_minutes: 5
+    total_seconds_left: 300
+    rounded_hours_left: 0
+    rounded_minutes_left: 5
+    rounded_seconds_left: 0
+tests:
+  - sentences:
+      - "주방 타이머 다시 시작"
+      - "주방에 있는 타이머 다시 시작"
+    slots:
+      area: "주방"
+    response: "타이머를 다시 시작했습니다"

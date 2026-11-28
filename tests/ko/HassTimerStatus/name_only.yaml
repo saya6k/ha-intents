@@ -1,0 +1,18 @@
+---
+# HassTimerStatus - name_only
+
+language: "ko"
+timers:
+  - is_active: true
+    name: "피자"
+    start_minutes: 25
+    total_seconds_left: 1500
+    rounded_hours_left: 0
+    rounded_minutes_left: 25
+    rounded_seconds_left: 0
+tests:
+  - sentences:
+      - "피자 타이머 얼마나 남았어"
+    slots:
+      name: "피자"
+    response: "25분 남았습니다."

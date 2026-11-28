@@ -1,0 +1,18 @@
+---
+# HassTimerStatus - minutes_only
+
+language: "ko"
+timers:
+  - is_active: true
+    start_minutes: 5
+    total_seconds_left: 300
+    rounded_hours_left: 0
+    rounded_minutes_left: 5
+    rounded_seconds_left: 0
+tests:
+  - sentences:
+      - "5분 타이머 얼마나 남았어"
+      - "5분짜리 타이머 얼마나 남았어"
+    slots:
+      start_minutes: 5
+    response: "5분 남았습니다."

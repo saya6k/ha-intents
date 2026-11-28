@@ -1,0 +1,11 @@
+---
+# HassUnpauseTimer - minutes_only
+# example: 5분 타이머 다시 시작
+# slots: {start_minutes}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_minutes:start_minutes}분[짜리] 타이머 (다시 시작|다시 시작해|재개|재개해|계속|계속해)"
+    example: "5분 타이머 다시 시작"
+    response: "default"

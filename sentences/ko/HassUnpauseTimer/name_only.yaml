@@ -1,0 +1,11 @@
+---
+# HassUnpauseTimer - name_only
+# example: 피자 타이머 다시 시작
+# slots: {name}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_name:name} 타이머 (다시 시작|다시 시작해|재개|재개해|계속|계속해)"
+    example: "피자 타이머 다시 시작"
+    response: "default"

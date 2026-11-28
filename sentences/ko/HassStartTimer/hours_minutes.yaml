@@ -1,0 +1,14 @@
+---
+# HassStartTimer - hours_minutes
+# example: 1시간 30분 타이머 설정
+# slots: {hours}, {minutes}
+
+language: "ko"
+data:
+  - sentences:
+      - "{timer_hours:hours}시간 {timer_minutes:minutes}분[짜리] 타이머 [<timer_set>]"
+      - "타이머 {timer_hours:hours}시간 {timer_minutes:minutes}분[으로|로] <timer_set>"
+      - "{timer_hours:hours}시간 {timer_half:minutes}[짜리] 타이머 [<timer_set>]"
+      - "타이머 {timer_hours:hours}시간 {timer_half:minutes}[으로|로] <timer_set>"
+    example: "1시간 30분 타이머 설정"
+    response: "default"
